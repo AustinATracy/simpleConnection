@@ -32,7 +32,7 @@ st.session_state['snowpark_session'] = session
 # import pandas
 
 # st.write(pandas)
-
+import nltk
 # from nltk.corpus import stopwords
 st.write(nltk)
 # import sklearn.feature_extraction.text as txt
