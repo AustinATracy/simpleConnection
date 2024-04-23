@@ -18,9 +18,6 @@ credentials = {
   "warehouse": "COMPUTE_WH"
 }
 
-
-st.write(credentials)
-
 session = Session.builder.configs(credentials).create()
 
 st.write(session)
