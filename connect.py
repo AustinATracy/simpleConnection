@@ -28,4 +28,6 @@ credentials = {
 
 session = Session.builder.configs(credentials).create()
 
-st.write(session)
+session.add_packages("scikit-learn", "pandas", "numpy", "nltk", "joblib", "cachetools")
+
+st.write(pandas)
