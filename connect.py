@@ -25,6 +25,8 @@ session = Session.builder.configs(credentials).create()
 
 session.add_packages("scikit-learn", "pandas", "numpy", "nltk", "joblib", "cachetools")
 
+session
+
 st.session_state['snowpark_session'] = session
 
 # import pandas
