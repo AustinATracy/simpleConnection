@@ -31,17 +31,18 @@ st.session_state['snowpark_session'] = session
 
 # st.write(pandas)
 
-from nltk.corpus import stopwords
-import sklearn.feature_extraction.text as txt
-from sklearn import svm
-import os
-from joblib import dump
+# from nltk.corpus import stopwords
+st.write(nltk)
+# import sklearn.feature_extraction.text as txt
+# from sklearn import svm
+# import os
+# from joblib import dump
     
-train_dataset = session.table("IMDB.PUBLIC.TRAIN_DATASET")
-train_dataset_flag = train_dataset.withColumn("SENTIMENT_FLAG", fn.when(train_dataset.SENTIMENT == "positive", 1)
-                                  .otherwise(2))
-train_x = train_dataset_flag.toPandas().REVIEW.values
-train_y = train_dataset_flag.toPandas().SENTIMENT_FLAG.values
-st.write('Taille train x : ', len(train_x))
-st.write('Taille train y : ', len(train_y))
+# train_dataset = session.table("IMDB.PUBLIC.TRAIN_DATASET")
+# train_dataset_flag = train_dataset.withColumn("SENTIMENT_FLAG", fn.when(train_dataset.SENTIMENT == "positive", 1)
+#                                   .otherwise(2))
+# train_x = train_dataset_flag.toPandas().REVIEW.values
+# train_y = train_dataset_flag.toPandas().SENTIMENT_FLAG.values
+# st.write('Taille train x : ', len(train_x))
+# st.write('Taille train y : ', len(train_y))
 
