@@ -29,4 +29,4 @@ st.session_state['snowpark_session'] = session
 
 import pandas
 
-st.write("pandas")
+st.write(pandas)
