@@ -4,4 +4,4 @@ numpy
 snowflake-snowpark-python
 streamlit
 nltk
-sklearn
+scikit-learn
