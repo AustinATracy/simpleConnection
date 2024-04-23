@@ -34,13 +34,14 @@ st.session_state['snowpark_session'] = session
 # st.write(pandas)
 # import nltk
 from nltk.corpus import stopwords
-st.write(stopwords)
-# import sklearn.feature_extraction.text as txt
-# from sklearn import svm
-# import os
-# from joblib import dump
+# st.write(stopwords)
+import sklearn.feature_extraction.text as txt
+from sklearn import svm
+import os
+from joblib import dump
     
-# train_dataset = session.table("IMDB.PUBLIC.TRAIN_DATASET")
+train_dataset = session.table("IMDB.PUBLIC.TRAIN_DATASET")
+st.write(train_dataset)
 # train_dataset_flag = train_dataset.withColumn("SENTIMENT_FLAG", fn.when(train_dataset.SENTIMENT == "positive", 1)
 #                                   .otherwise(2))
 # train_x = train_dataset_flag.toPandas().REVIEW.values

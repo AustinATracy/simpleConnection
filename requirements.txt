@@ -4,3 +4,5 @@ numpy
 snowflake-snowpark-python
 streamlit
 nltk
+os
+sklearn
