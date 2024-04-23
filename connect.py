@@ -37,7 +37,7 @@ from nltk.corpus import stopwords
 # st.write(stopwords)
 import sklearn.feature_extraction.text as txt
 from sklearn import svm
-import os
+# import os
 from joblib import dump
     
 train_dataset = session.table("IMDB.PUBLIC.TRAIN_DATASET")
